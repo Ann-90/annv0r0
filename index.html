@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>annv0r0</title>
 		<link rel="stylesheet" href="style.css" />
-		<!-- <link rel="stylesheet" href="components/animation.css" /> -->
+		<link rel="stylesheet" href="components/animation.css" />
 		<script defer type="module" src="scripts.js"></script>
 		<script defer type="module" src="translate.js"></script>
 	</head>
@@ -14,7 +14,6 @@
 	<body>
 		<header class="header is-hidden">
 			<nav class="header__nav">
-				<!-- TODO: change name attr into (?) -->
 				<span><a class="active-color" href="#Home" data-i18n="Home">Главная</a></span>
 				<span><a href="#About" data-i18n="About">О себе</a></span>
 				<span><a href="#Skills" data-i18n="Skills">Что я умею</a></span>
@@ -57,22 +56,30 @@
 			<section class="aboutme">
 				<h2><a name="About" data-i18n="About">О себе</a></h2>
 				<p data-i18n="about_1">
-					Здравствуйте! Меня зовут Анна. Я - начинающий веб-разработчик. Веб-технологии изучаю самостоятельно.
+					Здравствуйте. Меня зовут Анна. Я - джуниор веб-разработчик. Веб-технологии изучаю самостоятельно с
+					сентября 2020 года.
 				</p>
 				<p data-i18n="about_2">
-					С сентября 2020 года я работала помощником веб-разработчика, занимаясь отрисовкой интерфейсов по
-					готовым шаблонам Figma. Интерактивные элементы реализовывались при помощи Next.js (React
-					фреймворка). Я привыкла работать с фреймворками, которые делают разработку быстрее, удобнее и
-					качественнее.
+					С января по июль 2021 года я работала помощником веб-разработчика, занимаясь отрисовкой интерфейсов
+					по готовым шаблонам Figma при помощи React и TypeScript. В преиод обучения знакомилась с широким
+					стеком тенологий: немного познакомилась с базовым фнкуционалом Redux, NodeJS, ModgoDB.
 				</p>
 				<p data-i18n="about_3">
-					Я - специалист с нестандартным бэкграундом. До недавнего времени работала в глубоко гуманитарной
-					сфере. Так как учусь самостоятельно, не боюсь разбинаться с темами, с котрыми не работала. По этой
-					же причине я очень люблю тестовые задания: они помогают проверять свои знания, тренировать навык
-					выполнять работу оперативно и расширять кругозор, если задание пока не по силам.
+					С июля 2021 года знакомлюсь с языком PHP: в круг моих обязанностей входит верстка, работа с
+					реляционной базой данных, использование сторонних API (например, Yandex maps).
 				</p>
 				<p data-i18n="about_4">
-					Хочу двигаться вперед и вглубь, погружаясь в тонкости разработки и выполняя полезную работу в
+					Также в июле проходила дополнительное обучение в ТГУ по программе "Data аналитик": знакомилась с
+					основами PostgreSQL, Python и библиотеками машинного обучения.
+				</p>
+				<p data-i18n="about_5">Работаю с git: ссылку на мой аккаунт можно увидеть в разделе "Портфолио"</p>
+				<p data-i18n="about_6">
+					Я - специалист с нестандартным бэкграундом. До недавнего времени работала в глубоко гуманитарной
+					сфере. Так как учусь самостоятельно, не боюсь разбинаться с темами, с котрыми не работала.
+				</p>
+				<p data-i18n="about_7">
+					В данный момент хочу больше поработать с React и NodeJS, но всегда готова к новым открытиям. Хочу
+					развиваться вперед и вглубь, погружаясь в тонкости разработки и выполняя полезную работу в
 					интересной команде.
 				</p>
 			</section>
@@ -305,10 +312,16 @@
 				<h2><a name="Portfolio" data-i18n="Portfolio">Портфолио</a></h2>
 				<div class="portfolio__container">
 					<div class="portfolio__examples">
+						<iframe src="https://github.com/Ann-90">
+							<a href="https://github.com/Ann-90">PHP (cайт в разработке)</a>
+						</iframe>
+						<a href="https://github.com/Ann-90">Мой github аккаунт Ann-90</a>
+					</div>
+					<div class="portfolio__examples">
 						<iframe src="https://gomining.com">
 							<a href="gomining.com">Майнинг-отель</a>
 						</iframe>
-						<a href="https://gomining.com">gomining.com</a>
+						<a href="https://gomining.com">React</a>
 					</div>
 					<div class="portfolio__examples">
 						<iframe src="https://nti-canteen.vercel.app/">
@@ -318,10 +331,10 @@
 					</div>
 
 					<div class="portfolio__examples">
-						<!-- <iframe src="https://plan7.ru/">
-							<a href="https://plan7.ru/">Тестовый фрагмент сайта</a>
+						<iframe src="https://plan7.ru/">
+							<a href="https://plan7.ru/">PHP (cайт в разработке)</a>
 						</iframe>
-						<a href="https://plan7.ru">plan7.ru</a> -->
+						<a href="https://plan7.ru">PHP (cайт в разработке)</a>
 					</div>
 				</div>
 			</section>

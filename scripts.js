@@ -70,25 +70,25 @@ carousel.addEventListener("scroll", (event) => {
 
 // TODO: form submit
 
-const form = document.querySelector("form");
+// const form = document.querySelector("form");
 
-form.addEventListener("submit", (e) => {
-	e.preventDefault();
+// form.addEventListener("submit", (e) => {
+// 	e.preventDefault();
 
-	fetch("/api/telegramHandle.js", {
-		method: "post",
-		headers: {
-			"Content-Type": "application/json",
-		},
-		body: JSON.stringify({
-			name: e.target["name"]?.value,
-			email: e.target["address"]?.value,
-			letter: e.target["letter"]?.value,
-		}),
-	})
-		.then((r) => console.log(`Успешный запрос: ${r.ok}, ${r.url}`))
-		.catch((e) => console.log(`Запрос не обработан: ${e}`));
-});
+// 	fetch("/api/telegramHandle.js", {
+// 		method: "post",
+// 		headers: {
+// 			"Content-Type": "application/json",
+// 		},
+// 		body: JSON.stringify({
+// 			name: e.target["name"]?.value,
+// 			email: e.target["address"]?.value,
+// 			letter: e.target["letter"]?.value,
+// 		}),
+// 	})
+// 		.then((r) => console.log(`Успешный запрос: ${r.ok}, ${r.url}`))
+// 		.catch((e) => console.log(`Запрос не обработан: ${e}`));
+// });
 
 //animation
 let coinTimeout;
