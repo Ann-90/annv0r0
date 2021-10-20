@@ -48,6 +48,9 @@ let translations = {
 		about_3:
 			"If you are interested in people with unconventional experience I submit my candidacy. Until recently I have been working in a humanitarian field. I study computer science on my own. I deal with new information well.",
 		about_4: "I want to move forward doing useful job in a good team",
+		about_5: "",
+		about_6: "",
+		about_7: "",
 		Skills: "Skills",
 		skills__title: "I work in such programms as:",
 		Portfolio: "Portfolio",
