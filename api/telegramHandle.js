@@ -20,6 +20,6 @@ export default async (req, res) => {
 	} catch {
 		res.statusCode = 500;
 		res.setHeader("Content-Type", "application/json");
-		res.end(JSON.stringify({ ok: false, url: "www.no.fuck" }));
+		res.end(JSON.stringify({ ok: false, url: "www.no.sad" }));
 	}
 };
