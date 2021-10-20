@@ -19,6 +19,28 @@
 	}
 }
 
+@keyframes shake {
+	0%,
+	30%,
+	60%,
+	90% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+
+	10%,
+	40%,
+	70%,
+	100% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+	20%,
+	50%,
+	80%,
+	95% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+}
+
 @keyframes space {
 	0% {
 		background: initial;
@@ -36,7 +58,49 @@
 	}
 }
 
+/* python */
+.python_tool {
+	position: relative;
+}
+
+.ptoung_head img {
+	z-index: 10;
+}
+
+.ptoung_head::before,
+.ptoung_head::after {
+	position: absolute;
+	display: block;
+	z-index: 0;
+	width: 30px;
+	height: 10px;
+}
+
+.ptoung_head::before {
+	content: " ";
+	top: 5px;
+	left: calc(50% - 45px);
+	background: url("/public/tools_logo/toung_left.png") no-repeat center;
+	background-size: contain;
+}
+
+.ptoung_head::after {
+	content: " ";
+	background: url("/public/tools_logo/toung_right.png") no-repeat center;
+	background-size: contain;
+	bottom: 55px;
+	right: calc(50% - 45px);
+}
+
+.ptoung_head:hover::after,
+.ptoung_head:hover::before {
+	animation: shake linear 0.5s infinite;
+}
+
+/* icons */
 .icon-js,
+.ptoung_head::before,
+.ptoung_head::after,
 .icon-mongoDB,
 .icon-TS {
 	transition: all 0.5s linear;
@@ -50,80 +114,15 @@
 	animation: wheel 10s linear infinite;
 }
 
-/* js */
 .icon-js:hover {
 	border-radius: 90px;
 }
 
-/* python */
-.python_tool {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.icon-git:hover {
+	-webkit-filter: drop-shadow(3px 5px 15px #ff7f50);
+	filter: drop-shadow(3px 5px 15px #ff7f50);
 }
 
-.ptoung_head {
-	z-index: 10;
-}
-
-.hiddenToung {
-	position: absolute;
-	z-index: 0;
-	height: 10px;
-	transition: transform 1s;
-}
-
-.ptoung_left {
-	top: 5%;
-	left: 95px;
-}
-
-.ptoung_right {
-	top: 40%;
-	right: 95px;
-}
-
-.python_tool:hover .ptoung_left {
-	transform: translateX(-8px);
-}
-
-.python_tool:hover .ptoung_right {
-	transform: translateX(8px);
-}
-
-/* git */
-.gitShadow {
-	position: relative;
-}
-
-.gitRound {
-	position: absolute;
-	border-radius: 100%;
-	width: 10px;
-	height: 10px;
-}
-
-.gitRound1 {
-	left: 60px;
-	top: 20px;
-}
-
-.gitRound2 {
-	left: 60px;
-	top: 60px;
-}
-
-.gitRound3 {
-	left: 80px;
-	top: 40px;
-}
-
-.gitTool:hover .gitRound {
-	box-shadow: 0 0 20px 7px white;
-}
-
-/* another icons */
 .icon-TS:hover,
 .icon-php:hover {
 	-webkit-filter: drop-shadow(3px 5px 5px #000);

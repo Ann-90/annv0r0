@@ -115,6 +115,12 @@ button:hover,
 	display: none;
 }
 
+.header,
+.contacts__social,
+.tools figure,
+.skills_stars {
+	margin: auto;
+}
 /* COMPONENTS */
 
 /* language switcher */
@@ -171,7 +177,6 @@ button {
 
 .contacts__social {
 	max-width: 350px;
-	margin: auto;
 	padding: 100px 0 60px 0;
 }
 
@@ -296,7 +301,6 @@ section {
 
 .skills_stars {
 	width: 100px;
-	margin: auto;
 }
 
 .skills_stars img {
@@ -392,7 +396,6 @@ section {
 		z-index: 1;
 		height: 100vh;
 		width: 100%;
-		margin: auto;
 		background: #fff;
 	}
 
@@ -433,8 +436,6 @@ section {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 		gap: 20px;
-
-		/* align-items: center; */
 	}
 
 	.skills_stars {
