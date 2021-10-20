@@ -86,7 +86,7 @@ form.addEventListener("submit", (e) => {
 			letter: e.target["letter"]?.value,
 		}),
 	})
-		.then((r) => console.log(`Успешный запрос: ${r.ok}`))
+		.then((r) => console.log(`Успешный запрос: ${r.ok}, ${r.url}`))
 		.catch((e) => console.log(`Запрос не обработан: ${e}`));
 });
 
