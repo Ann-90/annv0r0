@@ -102,12 +102,11 @@ iframe {
 	background-color: #f6f6f6;
 }
 
-.dropdown__close:hover,
-.hero__menu-img:hover,
+.is-close:hover,
+.is-show:hover,
 a:hover,
 .lang:hover,
 button:hover,
-.contacts__close:hover,
 .skill__arrow:hover,
 .carousel-switch__element:hover,
 .tools:hover {
@@ -115,13 +114,12 @@ button:hover,
 	opacity: 0.8;
 }
 
-.dropdown__close,
-.contacts__close {
+.is-close {
 	width: 23px;
 }
 
 .dropdown-btns,
-.hero__menu-img,
+.hero .is-show,
 .contacts__formcard.is-hidden {
 	display: none;
 }
@@ -151,10 +149,12 @@ button:hover,
 /*carousel*/
 .skill__container {
 	overflow: scroll;
+	/* check "smooth" value */
 	scroll-behavior: smooth;
 	align-items: center;
 }
 
+/* check if prefix is supported */
 .skill__container::-webkit-scrollbar {
 	width: 0;
 }
@@ -168,18 +168,14 @@ button:hover,
 	margin: 30px 0;
 }
 
-button,
-[type="submit"] {
+button {
+	height: 40px;
+	width: 250px;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
 	background: #070707;
 	color: #ffffff;
-	border-radius: 20px;
-	border: none;
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
-}
-
-button {
-	width: 250px;
-	height: 40px;
 }
 
 .contacts__social {
@@ -206,7 +202,7 @@ button {
 	background-color: #fff;
 }
 
-.contacts__close {
+.contacts .is-close {
 	position: absolute;
 	top: 40px;
 	right: 40px;
@@ -235,19 +231,19 @@ textarea {
 	padding-top: 10px;
 }
 
-[name="name"] {
+[data-i18n="name"] {
 	grid-area: name;
 	height: 50px;
 	margin-right: 10px;
 }
 
-[name="address"] {
+[data-i18n="address"] {
 	grid-area: addr;
 	height: 50px;
 	margin-left: 10px;
 }
 
-[name="letter"] {
+[data-i18n="letter"] {
 	grid-area: question;
 	height: 200px;
 	margin-top: 20px;
@@ -255,113 +251,9 @@ textarea {
 	scroll-behavior: "smooth";
 }
 
-[type="submit"] {
+[data-i18n="contacts__send"] {
 	grid-area: submit;
 	margin: 20px auto;
-}
-
-/* animation */
-.html_css_img:hover {
-	animation: htmlCoin linear 2s infinite;
-}
-
-@keyframes htmlCoin {
-	0% {
-		transform: scaleX(1.1);
-	}
-	50% {
-		transform: scaleX(0.1);
-	}
-	100% {
-		transform: scaleX(1.1);
-	}
-}
-
-.react_img:hover {
-	animation: react 10s linear infinite;
-}
-
-.js_img {
-	transition: border-radius 0.5s linear;
-}
-
-.js_img:hover {
-	border-radius: 90px;
-}
-
-@keyframes react {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
-}
-
-.python_tool {
-	position: relative;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-
-.ptoung_head {
-	z-index: 10;
-}
-
-.hiddenToung {
-	position: absolute;
-	z-index: 0;
-	height: 10px;
-	transition: transform 1s;
-}
-
-.ptoung_left {
-	top: 5%;
-	left: 95px;
-}
-
-.ptoung_right {
-	top: 40%;
-	right: 95px;
-}
-
-.python_tool:hover .ptoung_left {
-	transform: translateX(-8px);
-}
-
-.python_tool:hover .ptoung_right {
-	transform: translateX(8px);
-}
-
-.gitShadow {
-	position: relative;
-}
-
-.gitRound {
-	position: absolute;
-	border-radius: 100%;
-	width: 10px;
-	height: 10px;
-}
-
-.gitRound1 {
-	left: 60px;
-	top: 20px;
-}
-
-.gitRound2 {
-	left: 60px;
-	top: 60px;
-}
-
-.gitRound3 {
-	left: 80px;
-	top: 40px;
-}
-
-.gitTool:hover .gitRound {
-	box-shadow: 0 0 20px 7px white;
 }
 
 /* details */
@@ -456,7 +348,7 @@ section {
 
 	.hero__info,
 	.header__nav,
-	.hero__menu-img,
+	.hero .is-show,
 	.skill__gallery {
 		display: flex;
 		flex-direction: column;
@@ -544,17 +436,17 @@ section {
 			"submit";
 	}
 
-	[name="name"],
-	[name="address"] {
+	[data-i18n="name"],
+	[data-i18n="address"] {
 		margin: 10px 0;
 	}
 
-	[name="letter"] {
+	[data-i18n="letter"] {
 		height: 150px;
 	}
 }
 
-@media screen and (min-width: 920px) and (max-width: 1439px) {
+@media screen and (min-width: 920px) and (max-width: 1440px) {
 	header {
 		padding: 0 72px;
 	}

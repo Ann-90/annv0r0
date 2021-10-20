@@ -10,16 +10,15 @@ export default async (req, res) => {
     letter: ${letter}
 
 	`;
-
+	console.log(message);
 	try {
-		await telegram(message);
-
-		res.statusCode = 200;
-		res.setHeader("Content-Type", "application/json");
-		res.end(JSON.stringify({ ok: true }));
+		// await telegram(message);
+		// res.statusCode = 200;
+		// res.setHeader("Content-Type", "application/json");
+		// res.end(JSON.stringify({ ok: true }));
 	} catch {
-		res.statusCode = 500;
-		res.setHeader("Content-Type", "application/json");
-		res.end(JSON.stringify({ ok: false }));
+		// res.statusCode = 500;
+		// res.setHeader("Content-Type", "application/json");
+		// res.end(JSON.stringify({ ok: false }));
 	}
 };

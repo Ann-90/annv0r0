@@ -1,35 +1,28 @@
-//header
-const headerel = document.querySelector("header");
+// toggle visibility
+const header = document.querySelector(".header.is-hidden");
+const showHeader = document.querySelector(".hero .is-show");
+const closeHeader = document.querySelector(".header .is-close");
 
-function toggleHideHeader() {
-	headerel.classList.toggle("is-hidden");
-}
-const showHeader = document.querySelector(".hero__menu-img");
-const closeHeader = document.querySelector(".dropdown__close");
+const formcard = document.querySelector(".contacts__formcard.is-hidden");
+const sendbtn = document.querySelector(".contacts .is-show");
+const closebtn = document.querySelector(".contacts .is-close");
 
-showHeader.addEventListener("click", toggleHideHeader);
-closeHeader.addEventListener("click", toggleHideHeader);
-
-//form
-const formcard = document.querySelector(".contacts__formcard");
-
-function toggleHideClass() {
-	formcard.classList.toggle("is-hidden");
+function addListener(arr, elem) {
+	arr.forEach((el) => {
+		el.addEventListener("click", () => {
+			elem.classList.toggle("is-hidden");
+		});
+	});
 }
 
-const sendbtn = document.querySelector("[name=contacts__send]");
-const closebtn = document.querySelector(".contacts__close");
-
-sendbtn.addEventListener("click", toggleHideClass);
-closebtn.addEventListener("click", toggleHideClass);
+addListener([showHeader, closeHeader], header);
+addListener([sendbtn, closebtn], formcard);
 
 //carousel
-
 const choser = document.querySelectorAll(".carousel-switch div");
 const carousel = document.querySelector(".skill__container");
 const carouselArrows = document.querySelectorAll(".skill__arrow");
 
-//TO DO: bind event
 choser.forEach((e) => {
 	e.addEventListener("click", (event) => {
 		if (event.currentTarget === choser[0]) {
@@ -50,6 +43,7 @@ carouselArrows.forEach((e) => {
 		}
 	});
 });
+
 let initialPosition = 0;
 carousel.addEventListener("scroll", (event) => {
 	choser.forEach((elem) => {
@@ -74,12 +68,13 @@ carousel.addEventListener("scroll", (event) => {
 	}, 1000);
 });
 
-//form submit
+// TODO: form submit
 
-const formSubmitEl = document.querySelector("form");
+const form = document.querySelector("form");
 
-/* formSubmitEl.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {
 	e.preventDefault();
+
 	fetch("/api/telegramHandle.js", {
 		method: "post",
 		headers: {
@@ -93,16 +88,15 @@ const formSubmitEl = document.querySelector("form");
 	})
 		.then((r) => console.log(`Успешный запрос: ${r.ok}`))
 		.catch((e) => console.log(`Запрос не обработан: ${e}`));
-}); */
+});
 
 //animation
 let coinTimeout;
 let coinInterval;
 const linkHTML = "./public/tools_logo/html-5.png";
 const linkCSS = "./public/tools_logo/css3.png";
-const canvas = document.querySelector("canvas");
 
-document.querySelector(".html_css_img").addEventListener("mouseover", (e) => {
+document.querySelector(".icon-layout").addEventListener("mouseover", (e) => {
 	let counter = 0;
 	coinTimeout = setTimeout(() => {
 		coinInterval = setInterval(() => {
@@ -113,7 +107,7 @@ document.querySelector(".html_css_img").addEventListener("mouseover", (e) => {
 	}, 1000);
 });
 
-document.querySelector(".html_css_img").addEventListener("mouseout", (e) => {
+document.querySelector(".icon-layout").addEventListener("mouseout", (e) => {
 	e.target.src = linkHTML;
 	clearInterval(coinTimeout);
 	clearInterval(coinInterval);
