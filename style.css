@@ -151,7 +151,7 @@ button:hover,
 	align-items: center;
 }
 
-/* check if prefix is supported */
+/* TODO: check if prefix is supported */
 .skill__container::-webkit-scrollbar {
 	width: 0;
 }
@@ -277,7 +277,8 @@ section {
 	margin: 50px 0 0;
 }
 
-.aboutme p {
+.aboutme p,
+.skill__gallery {
 	margin: 30px 0 0 0;
 }
 

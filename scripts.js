@@ -89,26 +89,3 @@ carousel.addEventListener("scroll", (event) => {
 // 		.then((r) => console.log(`Успешный запрос: ${r.ok}, ${r.url}`))
 // 		.catch((e) => console.log(`Запрос не обработан: ${e}`));
 // });
-
-//animation
-let coinTimeout;
-let coinInterval;
-const linkHTML = "./public/tools_logo/html-5.png";
-const linkCSS = "./public/tools_logo/css3.png";
-
-document.querySelector(".icon-layout").addEventListener("mouseover", (e) => {
-	let counter = 0;
-	coinTimeout = setTimeout(() => {
-		coinInterval = setInterval(() => {
-			counter++;
-
-			counter % 2 === 0 ? (e.target.src = linkHTML) : (e.target.src = linkCSS);
-		}, 2000);
-	}, 1000);
-});
-
-document.querySelector(".icon-layout").addEventListener("mouseout", (e) => {
-	e.target.src = linkHTML;
-	clearInterval(coinTimeout);
-	clearInterval(coinInterval);
-});

@@ -1,12 +1,25 @@
 @keyframes coin {
-	0% {
-		transform: scaleX(1.1);
-	}
 	50% {
-		transform: scaleX(0.1);
+		transform: rotateY(180deg);
 	}
+
 	100% {
-		transform: scaleX(1.1);
+		transform: rotateY(360deg);
+	}
+
+	0%,
+	25%,
+	76%,
+	100% {
+		background: url("/public/tools_logo/html-5.png") no-repeat center;
+		background-size: contain;
+	}
+
+	26%,
+	50%,
+	75% {
+		background: url("/public/tools_logo/css3.png") no-repeat center;
+		background-size: contain;
 	}
 }
 
@@ -57,6 +70,12 @@
 		transform: rotateY(360deg);
 	}
 }
+.icon-layout:hover {
+	height: 0;
+	width: 0;
+	padding: 90px 90px 0;
+	animation: coin 5s linear infinite;
+}
 
 /* python */
 .python_tool {
@@ -106,10 +125,6 @@
 	transition: all 0.5s linear;
 }
 
-.icon-layout:hover {
-	animation: coin linear 2s infinite;
-}
-
 .icon-react:hover {
 	animation: wheel 10s linear infinite;
 }
@@ -119,8 +134,8 @@
 }
 
 .icon-git:hover {
-	-webkit-filter: drop-shadow(3px 5px 15px #ff7f50);
-	filter: drop-shadow(3px 5px 15px #ff7f50);
+	-webkit-filter: drop-shadow(3px 0px 5px #ff7f50);
+	filter: drop-shadow(3px 0px 5px #ff7f50);
 }
 
 .icon-TS:hover,
