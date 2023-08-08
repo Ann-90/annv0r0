@@ -1,382 +1,379 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>annv0r0</title>
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="components/animation.css" />
-		<script defer type="module" src="scripts.js"></script>
-		<script defer type="module" src="translate.js"></script>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>annv0r0</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="components/animation.css" />
+    <script defer type="module" src="scripts.js"></script>
+    <script defer type="module" src="translate.js"></script>
+  </head>
 
-	<body>
-		<header class="header is-hidden">
-			<nav class="header__nav">
-				<span><a class="active-color" href="#Home" data-i18n="Home">Главная</a></span>
-				<span><a href="#About" data-i18n="About">О себе</a></span>
-				<span><a href="#Skills" data-i18n="Skills">Что я умею</a></span>
-				<span><a href="#Portfolio" data-i18n="Portfolio">Портфолио</a></span>
-				<span><a href="#Contacts" data-i18n="Contacts">Контакты</a></span>
-			</nav>
+  <body>
+    <header class="header is-hidden">
+      <nav class="header__nav">
+        <span><a class="active-color" href="#Home" data-i18n="Home">Главная</a></span>
+        <span><a href="#About" data-i18n="About">О себе</a></span>
+        <span><a href="#Skills" data-i18n="Skills">Что я умею</a></span>
+        <span><a href="#Portfolio" data-i18n="Portfolio">Портфолио</a></span>
+        <span><a href="#Contacts" data-i18n="Contacts">Контакты</a></span>
+      </nav>
 
-			<div class="header__dropdown dropdown-btns">
-				<img class="is-close" src="./public/cross.svg" alt="" />
+      <div class="header__dropdown dropdown-btns">
+        <img class="is-close" src="./public/cross.svg" alt="" />
 
-				<div class="dropdown__lang">
-					<span class="lang lang_eng">ENG</span>
-					<span class="lang lang_ru active-color">RU</span>
-				</div>
-			</div>
-		</header>
+        <div class="dropdown__lang">
+          <span class="lang lang_eng">ENG</span>
+          <span class="lang lang_ru active-color">RU</span>
+        </div>
+      </div>
+    </header>
 
-		<section class="hero">
-			<div class="hero__mobile">
-				<div class="hero__info">
-					<a>
-						<h1 data-i18n="my__name">Анна <br />Воробьева</h1>
-					</a>
+    <section class="hero">
+      <div class="hero__mobile">
+        <div class="hero__info">
+          <a>
+            <h1 data-i18n="my__name">Анна <br />Воробьева</h1>
+          </a>
 
-					<p data-i18n="post">JUNIOR ФРОНТЕНД РАЗРАБОТЧИК<br />Москва</p>
+          <p data-i18n="post">JUNIOR ФРОНТЕНД РАЗРАБОТЧИК<br />Москва</p>
 
-					<div class="hero__lang">
-						<span class="lang lang_eng">ENG</span>
-						<span class="lang lang_ru active-color">RU</span>
-					</div>
-				</div>
+          <div class="hero__lang">
+            <span class="lang lang_eng">ENG</span>
+            <span class="lang lang_ru active-color">RU</span>
+          </div>
+        </div>
 
-				<img class="is-show" src="./public/dropdown.svg" alt="" />
-			</div>
+        <img class="is-show" src="./public/dropdown.svg" alt="" />
+      </div>
 
-			<figure class="hero__main-img"><img src="./public/forport.png" alt="myface" /></figure>
-		</section>
+      <figure class="hero__main-img"><img src="./public/forport.png" alt="myface" /></figure>
+    </section>
 
-		<main class="main">
-			<section class="aboutme">
-				<h2><a name="About" data-i18n="About">О себе</a></h2>
-				<p data-i18n="about_1">
-					Здравствуйте. Меня зовут Анна. Я - джуниор веб-разработчик. Веб-технологии изучаю самостоятельно с
-					сентября 2020 года.
-				</p>
-				<p data-i18n="about_2">
-					С января по июль 2021 года я работала помощником веб-разработчика, занимаясь отрисовкой интерфейсов
-					по готовым шаблонам Figma при помощи React и TypeScript. В преиод обучения знакомилась с широким
-					стеком тенологий: немного познакомилась с базовым фнкуционалом Redux, NodeJS, ModgoDB.
-				</p>
-				<p data-i18n="about_3">
-					С июля 2021 года знакомлюсь с языком PHP: в круг моих обязанностей входит верстка, работа с
-					реляционной базой данных, использование сторонних API (например, Yandex maps).
-				</p>
-				<p data-i18n="about_4">
-					Также в июле проходила дополнительное обучение в ТГУ по программе "Data аналитик": знакомилась с
-					основами PostgreSQL, Python и библиотеками машинного обучения.
-				</p>
-				<p data-i18n="about_5">Работаю с git: ссылку на мой аккаунт можно увидеть в разделе "Портфолио"</p>
-				<p data-i18n="about_6">
-					Я - специалист с нестандартным бэкграундом. До недавнего времени работала в глубоко гуманитарной
-					сфере. Так как учусь самостоятельно, не боюсь разбинаться с темами, с котрыми не работала.
-				</p>
-				<p data-i18n="about_7">
-					В данный момент хочу больше поработать с React и NodeJS, но всегда готова к новым открытиям. Хочу
-					развиваться вперед и вглубь, погружаясь в тонкости разработки и выполняя полезную работу в
-					интересной команде.
-				</p>
-			</section>
+    <main class="main">
+      <section class="aboutme">
+        <h2><a name="About" data-i18n="About">О себе</a></h2>
+        <p data-i18n="about_1">
+          Здравствуйте. Меня зовут Анна. Я - джуниор веб-разработчик. Веб-технологии изучаю самостоятельно с сентября
+          2020 года.
+        </p>
+        <p data-i18n="about_2">
+          С января по июль 2021 года я работала помощником веб-разработчика, занимаясь отрисовкой интерфейсов по готовым
+          шаблонам Figma при помощи React и TypeScript. В преиод обучения знакомилась с широким стеком тенологий:
+          немного познакомилась с базовым фнкуционалом Redux, NodeJS, ModgoDB.
+        </p>
+        <p data-i18n="about_3">
+          С июля 2021 года знакомлюсь с языком PHP: в круг моих обязанностей входит верстка, работа с реляционной базой
+          данных, использование сторонних API (например, Yandex maps).
+        </p>
+        <p data-i18n="about_4">
+          Также в июле проходила дополнительное обучение в ТГУ по программе "Data аналитик": знакомилась с основами
+          PostgreSQL, Python и библиотеками машинного обучения.
+        </p>
+        <p data-i18n="about_5">Работаю с git: ссылку на мой аккаунт можно увидеть в разделе "Портфолио"</p>
+        <p data-i18n="about_6">
+          Я - специалист с нестандартным бэкграундом. До недавнего времени работала в глубоко гуманитарной сфере. Так
+          как учусь самостоятельно, не боюсь разбинаться с темами, с котрыми не работала.
+        </p>
+        <p data-i18n="about_7">
+          В данный момент хочу больше поработать с React и NodeJS, но всегда готова к новым открытиям. Хочу развиваться
+          вперед и вглубь, погружаясь в тонкости разработки и выполняя полезную работу в интересной команде.
+        </p>
+      </section>
 
-			<section class="skills">
-				<h2><a name="Skills" data-i18n="Skills">Что я умею</a></h2>
+      <section class="skills">
+        <h2><a name="Skills" data-i18n="Skills">Что я умею</a></h2>
 
-				<div class="skill__container">
-					<span class="skill__arrow skill__arrow-left">&lt;</span>
-					<div class="skill__gallery">
-						<div class="tools">
-							<figure>
-								<img src="./public/tools_logo/html-5.png" alt="" class="icon-layout" />
+        <div class="skill__container">
+          <span class="skill__arrow skill__arrow-left">&lt;</span>
+          <div class="skill__gallery">
+            <div class="tools">
+              <figure>
+                <img src="./public/tools_logo/html-5.png" alt="" class="icon-layout" />
 
-								<figcaption>HTML5 / CSS3</figcaption>
-							</figure>
+                <figcaption>HTML5 / CSS3</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools">
-							<figure>
-								<img src="./public/tools_logo/javascript.svg" alt="" class="icon-js" />
-								<figcaption>JS</figcaption>
-							</figure>
+            <div class="tools">
+              <figure>
+                <img src="./public/tools_logo/javascript.svg" alt="" class="icon-js" />
+                <figcaption>JS</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools">
-							<figure>
-								<img src="./public/tools_logo/react.svg" alt="" class="icon-react" />
-								<figcaption>React</figcaption>
-							</figure>
+            <div class="tools">
+              <figure>
+                <img src="./public/tools_logo/react.svg" alt="" class="icon-react" />
+                <figcaption>React</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools">
-							<div class="python_tool">
-								<figure class="ptoung_head">
-									<img src="./public/tools_logo/python-5.png" alt="" class="icon-python" />
-									<figcaption>Python</figcaption>
-								</figure>
-							</div>
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+            <div class="tools">
+              <div class="python_tool">
+                <figure class="ptoung_head">
+                  <img src="./public/tools_logo/python-5.png" alt="" class="icon-python" />
+                  <figcaption>Python</figcaption>
+                </figure>
+              </div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools gitTool">
-							<figure>
-								<img src="./public/tools_logo/git.png" alt="" class="icon-git" />
-								<figcaption>git</figcaption>
-							</figure>
+            <div class="tools gitTool">
+              <figure>
+                <img src="./public/tools_logo/git.png" alt="" class="icon-git" />
+                <figcaption>git</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools sassTool">
-							<figure>
-								<img src="./public/tools_logo/sass.png" alt="" class="icon-sass" />
-								<figcaption>SASS</figcaption>
-							</figure>
+            <div class="tools sassTool">
+              <figure>
+                <img src="./public/tools_logo/sass.png" alt="" class="icon-sass" />
+                <figcaption>SASS</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools nodeTool">
-							<figure>
-								<img src="./public/tools_logo/node.png" alt="" class="icon-node" />
-								<figcaption>Node JS</figcaption>
-							</figure>
+            <div class="tools nodeTool">
+              <figure>
+                <img src="./public/tools_logo/node.png" alt="" class="icon-node" />
+                <figcaption>Node JS</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools JQ">
-							<figure>
-								<img src="./public/tools_logo/jquery.png" alt="" class="icon-JQuery" />
-								<figcaption>JQuery</figcaption>
-							</figure>
+            <div class="tools JQ">
+              <figure>
+                <img src="./public/tools_logo/jquery.png" alt="" class="icon-JQuery" />
+                <figcaption>JQuery</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools mongoDB">
-							<figure>
-								<img src="./public/tools_logo/mongodb.png" alt="" class="icon-mongoDB" />
-								<figcaption>MongoDB</figcaption>
-							</figure>
+            <div class="tools mongoDB">
+              <figure>
+                <img src="./public/tools_logo/mongodb.png" alt="" class="icon-mongoDB" />
+                <figcaption>MongoDB</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools TS">
-							<figure>
-								<img src="./public/tools_logo/ts-2.png" alt="" class="icon-TS" />
-								<figcaption>TypeScript</figcaption>
-							</figure>
+            <div class="tools TS">
+              <figure>
+                <img src="./public/tools_logo/ts-2.png" alt="" class="icon-TS" />
+                <figcaption>TypeScript</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools webpack">
-							<figure>
-								<img src="./public/tools_logo/webpack.png" alt="" class="icon-webpack" />
-								<figcaption>Webpack</figcaption>
-							</figure>
+            <div class="tools webpack">
+              <figure>
+                <img src="./public/tools_logo/webpack.png" alt="" class="icon-webpack" />
+                <figcaption>Webpack</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools php">
-							<figure>
-								<img src="./public/tools_logo/php.png" alt="" class="icon-php" />
-								<figcaption>PHP</figcaption>
-							</figure>
+            <div class="tools php">
+              <figure>
+                <img src="./public/tools_logo/php.png" alt="" class="icon-php" />
+                <figcaption>PHP</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
 
-						<div class="tools postgresql">
-							<figure>
-								<img src="./public/tools_logo/postgresql.png" alt="" class="icon-postgresql" />
-								<figcaption>PostgreSQL</figcaption>
-							</figure>
+            <div class="tools postgresql">
+              <figure>
+                <img src="./public/tools_logo/postgresql.png" alt="" class="icon-postgresql" />
+                <figcaption>PostgreSQL</figcaption>
+              </figure>
 
-							<div class="skills_stars">
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-								<img src="./public/Star-2.svg" alt="" />
-							</div>
-						</div>
-					</div>
-					<span class="skill__arrow skill__arrow-right">&gt;</span>
-				</div>
-				<!-- TODO: check visibility -->
-				<div class="carousel-switch">
-					<div class="carousel-switch__element chosenSwitch"></div>
-					<div class="carousel-switch__element"></div>
-				</div>
-			</section>
+              <div class="skills_stars">
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+                <img src="./public/Star-2.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <span class="skill__arrow skill__arrow-right">&gt;</span>
+        </div>
+        <!-- TODO: check visibility -->
+        <div class="carousel-switch">
+          <div class="carousel-switch__element chosenSwitch"></div>
+          <div class="carousel-switch__element"></div>
+        </div>
+      </section>
 
-			<section class="portfolio">
-				<h2><a name="Portfolio" data-i18n="Portfolio">Портфолио</a></h2>
-				<div class="portfolio__container">
-					<figure class="portfolio__example">
-						<img src="/public/portfolio/gh.png" alt="portfolio-gh" />
-						<figcaption>
-							<a href="https://github.com/Ann-90?tab=repositories">Мой github аккаунт</a>
-						</figcaption>
-					</figure>
+      <section class="portfolio">
+        <h2><a name="Portfolio" data-i18n="Portfolio">Портфолио</a></h2>
+        <div class="portfolio__container">
+          <figure class="portfolio__example">
+            <img src="/public/portfolio/gh.png" alt="portfolio-gh" />
+            <figcaption>
+              <a href="https://github.com/Ann-90?tab=repositories">Мой github аккаунт</a>
+            </figcaption>
+          </figure>
 
-					<figure class="portfolio__example">
-						<img src="/public/portfolio/gomining.png" alt="portfolio-gomining" />
-						<figcaption>
-							<a href="https://gomining.com">Пример верстки на React</a>
-						</figcaption>
-					</figure>
+          <figure class="portfolio__example">
+            <img src="/public/portfolio/gomining.png" alt="portfolio-gomining" />
+            <figcaption>
+              <a href="https://gomining.com">Пример верстки на React</a>
+            </figcaption>
+          </figure>
 
-					<figure class="portfolio__example">
-						<img src="/public/portfolio/canteen.png" alt="portfolio-canteen" />
-						<figcaption>
-							<a href="https://nti-canteen.vercel.app/">Пример верстки по БЭМ-методологии</a>
-						</figcaption>
-					</figure>
+          <figure class="portfolio__example">
+            <img src="/public/portfolio/canteen.png" alt="portfolio-canteen" />
+            <figcaption>
+              <a href="https://nti-canteen.vercel.app/">Пример верстки по БЭМ-методологии</a>
+            </figcaption>
+          </figure>
 
-					<figure class="portfolio__example">
-						<img src="/public/portfolio/p7.png" alt="" />
-						<figcaption>
-							<a href="https://plan7.ru">Пример верстки на PHP (cайт в разработке)</a>
-						</figcaption>
-					</figure>
-				</div>
-			</section>
+          <figure class="portfolio__example">
+            <img src="/public/portfolio/p7.png" alt="" />
+            <figcaption>
+              <a href="https://plan7.ru">Пример верстки на PHP (cайт в разработке)</a>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
 
-			<section class="contacts">
-				<h2><a name="Contacts" data-i18n="Contacts">Контакты</a></h2>
+      <section class="contacts">
+        <h2><a name="Contacts" data-i18n="Contacts">Контакты</a></h2>
 
-				<p data-i18n="contacts__text">
-					Хотите уточнить информацию? <br />
-					Напишите мне
-				</p>
-				<button class="is-show" data-i18n="contacts__send">Отправить сообщение</button>
+        <p data-i18n="contacts__text">
+          Хотите уточнить информацию? <br />
+          Напишите мне
+        </p>
+        <button class="is-show" data-i18n="contacts__send">Отправить сообщение</button>
 
-				<div class="contacts__formcard is-hidden">
-					<img class="is-close" src="./public/cross.svg" />
+        <div class="contacts__formcard is-hidden">
+          <img class="is-close" src="./public/cross.svg" />
 
-					<h2>Отправьте мне сообщение</h2>
-					<form target="_self" enctype="text/plain">
-						<input type="text" data-i18n="name" placeholder="К сожалению," />
-						<input type="email" data-i18n="address" placeholder="этот раздел еще не готов" />
-						<textarea
-							data-i18n="letter"
-							placeholder="Чтобы связаться со мной, закройте форму и кликните по иконкам мессенджеров ниже"
-						>
-						</textarea>
-						<button type="submit" data-i18n="contacts__send">Отправить сообщение</button>
-					</form>
-				</div>
+          <h2>Напишите мне</h2>
+          <form target="_self" enctype="text/plain">
+            <input type="text" data-i18n="name" placeholder="К сожалению," />
+            <input type="email" data-i18n="address" placeholder="этот раздел еще не готов" />
+            <textarea
+              data-i18n="letter"
+              placeholder="Чтобы связаться со мной, закройте форму и кликните по иконкам мессенджеров ниже"
+            >
+            </textarea>
+            <button type="submit" data-i18n="contacts__send">Отправить сообщение</button>
+          </form>
+        </div>
 
-				<div class="contacts__social">
-					<figure>
-						<a href="https://t.me/annv0r0"><img src="./public/telegram.png" alt="" /></a>
-					</figure>
+        <div class="contacts__social">
+          <figure>
+            <a href="https://t.me/annv0r0"><img src="./public/telegram.png" alt="" /></a>
+          </figure>
 
-					<figure>
-						<a href="https://wa.me/+79032733469">
-							<img src="./public/wapp.png" alt="" />
-						</a>
-					</figure>
+          <figure>
+            <a href="https://wa.me/+79032733469">
+              <img src="./public/wapp.png" alt="" />
+            </a>
+          </figure>
 
-					<figure>
-						<a href="https://join.skype.com/invite/gKSHXonQd79C"
-							><img src="./public/skype.png" alt="" />
-						</a>
-					</figure>
-				</div>
+          <figure>
+            <a href="https://join.skype.com/invite/gKSHXonQd79C"><img src="./public/skype.png" alt="" /> </a>
+          </figure>
+        </div>
 
-				<div class="contacts__social-desc" data-i18n="contacts__appeal">
-					Свяжитесь со мной через<br />
-					Telegram / WhatsApp / Skype
-				</div>
-			</section>
-		</main>
-	</body>
+        <div class="contacts__social-desc" data-i18n="contacts__appeal">
+          Свяжитесь со мной через<br />
+          Telegram / WhatsApp / Skype
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
